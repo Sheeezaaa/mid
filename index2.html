@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Groceries | Premium Grocery Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+        <div class="container nav-wrap">
+            <a href="#home" class="logo" aria-label="Fresh Groceries Home">
+                <span class="logo-mark"><i class="fa-solid fa-leaf"></i></span>
+                <span class="logo-text">FreshGrocer</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="navbar" id="navbar">
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">Products</a>
+                <a href="#features">Features</a>
+                <a href="orders.html">Orders</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="search" role="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="search-input" type="search" placeholder="Search milk, fruits, snacks..." aria-label="Search products">
+                <button id="search-btn" type="button" aria-label="Search products">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <button class="cart-btn" id="cart-toggle" aria-label="Open cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <p class="hero-badge">Delivery in as fast as 15 minutes</p>
+                <h1>Premium groceries for everyday living</h1>
+                <p>From farm-fresh produce to trusted daily essentials, shop everything in one seamless experience.</p>
+                <a class="btn btn-primary" href="#products">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="categories section" id="categories">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Popular Categories</h2>
+                    <p>Curated collections to speed up your shopping.</p>
+                </div>
+                <div class="categories-grid">
+                    <article class="category-card">
+                        <img src="image/cat-1.png" alt="Vegetables">
+                        <h3>Vegetables</h3>
+                        <p>Farm-fresh picks daily</p>
+                    </article>
+                    <article class="category-card">
+                        <img src="image/cat-2.png" alt="Fresh Fruits">
+                        <h3>Fruits</h3>
+                        <p>Seasonal and juicy</p>
+                    </article>
+                    <article class="category-card">
+                        <img src="image/cat-3.png" alt="Dairy">
+                        <h3>Dairy</h3>
+                        <p>Milk, cheese and more</p>
+                    </article>
+                    <article class="category-card">
+                        <img src="image/cat-4.png" alt="Bakery">
+                        <h3>Bakery</h3>
+                        <p>Freshly baked delights</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="products section" id="products">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Best Selling Products</h2>
+                    <p>Premium quality products loved by thousands of families.</p>
+                </div>
+                <div id="products-grid" class="products-grid" aria-live="polite"></div>
+                <p id="empty-state" class="empty-state hidden">No products found. Try a different keyword.</p>
+            </div>
+        </section>
+
+        <section class="features section" id="features">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Why Shop With Us</h2>
+                    <p>Designed to make your weekly grocery run effortless.</p>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>Real-time tracking and express slots in your city.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i class="fa-solid fa-seedling"></i>
+                        <h3>Quality First</h3>
+                        <p>Freshness checks on every order before dispatch.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <h3>Trusted Payments</h3>
+                        <p>Secure checkout with cards, UPI and wallets.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        <h3>Easy Returns</h3>
+                        <p>No-hassle refunds for damaged or wrong items.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment section" id="payment">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Payment Options</h2>
+                    <p>Choose your preferred mode at checkout. Demo payments are enabled.</p>
+                </div>
+                <div class="payment-options-grid">
+                    <article class="payment-option-card">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>UPI</h3>
+                        <p>Pay using PhonePe, GPay, Paytm and more.</p>
+                    </article>
+                    <article class="payment-option-card">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <h3>Credit / Debit Card</h3>
+                        <p>Fast and secure card payment support.</p>
+                    </article>
+                    <article class="payment-option-card">
+                        <i class="fa-solid fa-wallet"></i>
+                        <h3>Wallet</h3>
+                        <p>Use your saved wallet balance instantly.</p>
+                    </article>
+                    <article class="payment-option-card">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <h3>Cash on Delivery</h3>
+                        <p>Pay after product reaches your doorstep.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div>
+                <h4>FreshGrocer</h4>
+                <p>Your premium digital grocery partner for healthy and convenient shopping.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">Products</a>
+                <a href="#features">Features</a>
+                <a href="orders.html">Orders</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Email: support@freshgrocer.com</p>
+                <p>Phone: +92 2345678901</p>
+                <p>Address: lahore, suk chan</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 FreshGrocer. All rights reserved.</p>
+    </footer>
+
+    <aside class="cart-sidebar" id="cart-sidebar" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cart-total">$0.00</strong>
+            </div>
+            <button class="btn btn-primary checkout-btn" type="button">Proceed to Checkout</button>
+        </div>
+    </aside>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <div class="payment-modal" id="payment-modal" aria-hidden="true">
+        <div class="payment-modal-card">
+            <button class="payment-close" id="payment-close" aria-label="Close payment">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3>Complete Payment</h3>
+            <p class="payment-subtext">Demo checkout for frontend testing only.</p>
+            <p class="payment-amount">Payable: <strong id="payment-amount">$0.00</strong></p>
+
+            <div class="payment-radio-group" id="payment-method-group">
+                <label class="payment-method-option">
+                    <input type="radio" name="payment-method" value="UPI" checked>
+                    <span><i class="fa-solid fa-mobile-screen-button"></i> UPI</span>
+                </label>
+                <label class="payment-method-option">
+                    <input type="radio" name="payment-method" value="Card">
+                    <span><i class="fa-regular fa-credit-card"></i> Card</span>
+                </label>
+                <label class="payment-method-option">
+                    <input type="radio" name="payment-method" value="Wallet">
+                    <span><i class="fa-solid fa-wallet"></i> Wallet</span>
+                </label>
+                <label class="payment-method-option">
+                    <input type="radio" name="payment-method" value="COD">
+                    <span><i class="fa-solid fa-money-bill-wave"></i> Cash on Delivery</span>
+                </label>
+            </div>
+
+            <button class="btn btn-primary payment-pay-btn" id="pay-now-btn" type="button">Pay Now (Demo)</button>
+        </div>
+    </div>
+
+    
+   
+
+    <script src="jss/script.js"></script>
+</body>
+</html>
