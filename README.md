@@ -7,7 +7,7 @@ style="display:inline-block; padding:10px 20px; background-color:#4CAF50; color:
 View Live Demo
 </a>
 </br>
-<br>
+
 <table style="font-family: Arial; border-collapse: collapse; width: 70%;">
   <tr style="background-color: #4CAF50; color: white;">
     <th style="padding: 10px; border: 1px solid #ddd;">#</th>
