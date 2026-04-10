@@ -83,8 +83,9 @@ View Live Demo
   📸 Screenshots
 </h2>
 <img src="https://github.com/user-attachments/assets/77123b42-d484-492a-8d40-bcc7377b7c34"  width=250"  style="border:1px solid #ddd; border-radius:8px;" />
+<br>
 <img src="https://github.com/user-attachments/assets/a64e79f5-d703-4ec4-9fb4-6ff61079e70f" width=250"  style="border:1px solid #ddd; border-radius:8px;" />
-
+<br>
 <img src="https://github.com/user-attachments/assets/b35f23d7-68d3-4107-a32c-214e42186deb"
      width="250"
      style="border:1px solid #ddd; border-radius:8px;" />
